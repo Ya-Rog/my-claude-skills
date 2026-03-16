@@ -29,8 +29,9 @@
 | Скил | Что делает | Триггер | Источник |
 |---|---|---|---|
 | **skill-discover** | Поиск и установка новых скилов из маркетплейсов | "найди скил для X", "есть ли плагин для Y" | local |
-| **skill-creator** | Создание и тестирование новых скилов | "создай скил", "улучши скил" | anthropics/claude-plugins-official |
 | **skill-maintain** | Проверка обновлений переведённых скилов | "проверь обновления скилов" | local |
+
+> `skill-creator` — официальный скил Anthropic, устанавливается автоматически. Подробнее: [OFFICIAL.md](./OFFICIAL.md)
 
 ---
 
@@ -41,14 +42,6 @@
 | **api-design** | REST и GraphQL API дизайн, паттерны, версионирование | "спроектируй API", "как назвать эндпоинт" | local |
 | **component-architecture** | Архитектура UI-компонентов, presentation/container, custom hooks | "как организовать компоненты" | local |
 | **error-handling** | Обработка ошибок, retry, circuit breaker, graceful degradation | "как обрабатывать ошибки", "circuit breaker" | local |
-
----
-
-## 🎨 Frontend
-
-| Скил | Что делает | Триггер | Источник |
-|---|---|---|---|
-| **frontend-design** | Production-grade UI с уникальным дизайном, анимации, типографика | "создай компонент", "сделай страницу" | anthropics/claude-plugins-official |
 
 ---
 
@@ -69,17 +62,15 @@ my-claude-skills/
   skills/
     meta/
       skill-discover/SKILL.md
-      skill-creator/SKILL.md
       skill-maintain/SKILL.md
     engineering/
       api-design/SKILL.md
       component-architecture/SKILL.md
       error-handling/SKILL.md
-    frontend/
-      frontend-design/SKILL.md
     database/
       postgres-design/SKILL.md
   CATALOG.md                  ← этот файл
+  OFFICIAL.md                 ← официальные скилы Anthropic (не трогаем)
 ```
 
 ---

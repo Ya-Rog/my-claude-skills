@@ -31,12 +31,6 @@
       "path": "../skills/engineering/error-handling"
     },
     {
-      "id": "frontend-design",
-      "name": "Frontend Design (RU)",
-      "description": "Создание уникальных production-grade фронтенд интерфейсов",
-      "path": "../skills/frontend/frontend-design"
-    },
-    {
       "id": "postgres-design",
       "name": "Postgres Design (RU)",
       "description": "Проектирование PostgreSQL схем",
