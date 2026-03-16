@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    {
+      "id": "skill-discover",
+      "name": "Skill Discover (RU)",
+      "description": "Поиск, оценка и установка скилов и плагинов для Claude Code",
+      "path": "../skills/skill-discover"
+    }
+  ]
+}
