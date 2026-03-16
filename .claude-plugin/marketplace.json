@@ -4,7 +4,43 @@
       "id": "skill-discover",
       "name": "Skill Discover (RU)",
       "description": "Поиск, оценка и установка скилов и плагинов для Claude Code",
-      "path": "../skills/skill-discover"
+      "path": "../skills/meta/skill-discover"
+    },
+    {
+      "id": "skill-maintain",
+      "name": "Skill Maintain (RU)",
+      "description": "Проверка обновлений переведённых скилов из внешних репозиториев",
+      "path": "../skills/meta/skill-maintain"
+    },
+    {
+      "id": "api-design",
+      "name": "API Design (RU)",
+      "description": "Мастерство REST и GraphQL API дизайна",
+      "path": "../skills/engineering/api-design"
+    },
+    {
+      "id": "component-architecture",
+      "name": "Component Architecture (RU)",
+      "description": "Архитектурные паттерны компонентов",
+      "path": "../skills/engineering/component-architecture"
+    },
+    {
+      "id": "error-handling",
+      "name": "Error Handling (RU)",
+      "description": "Паттерны обработки ошибок и устойчивых приложений",
+      "path": "../skills/engineering/error-handling"
+    },
+    {
+      "id": "frontend-design",
+      "name": "Frontend Design (RU)",
+      "description": "Создание уникальных production-grade фронтенд интерфейсов",
+      "path": "../skills/frontend/frontend-design"
+    },
+    {
+      "id": "postgres-design",
+      "name": "Postgres Design (RU)",
+      "description": "Проектирование PostgreSQL схем",
+      "path": "../skills/database/postgres-design"
     }
   ]
 }
