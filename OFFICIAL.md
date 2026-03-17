@@ -16,31 +16,31 @@
 
 ### Документы — из маркетплейса `anthropic-skills`
 
-| Скил | Зачем | Как загружается |
+| Скил | Зачем | Как использовать |
 |---|---|---|
-| `pdf` | Читать, создавать, объединять, разбивать PDF, OCR | Автоматически |
-| `docx` | Создавать и редактировать Word-документы | Автоматически |
-| `xlsx` | Работа с Excel-таблицами | Автоматически |
-| `pptx` | Создавать и редактировать презентации | Автоматически |
-| `schedule` | Создавать запланированные задачи | Автоматически |
+| `pdf` | Читать, создавать, объединять, разбивать PDF, OCR | "прочитай этот PDF", "объедини файлы", "сделай OCR" — триггерится автоматически |
+| `docx` | Создавать и редактировать Word-документы | "создай Word документ", "добавь оглавление в .docx" |
+| `xlsx` | Работа с Excel-таблицами | "создай таблицу Excel", "добавь формулы в xlsx" |
+| `pptx` | Создавать и редактировать презентации | "сделай презентацию", "добавь слайды в .pptx" |
+| `schedule` | Создавать запланированные задачи | "запускай это каждую неделю", "создай задачу по расписанию" |
 
 ### Инструменты — из `claude-plugins-official`
 
-| Скил / Плагин | Зачем | Включён в settings.json |
+| Скил / Плагин | Зачем | Как использовать |
 |---|---|---|
-| `skill-creator` | Создание и тестирование скилов с eval-системой | Авто (anthropic-skills) |
-| `frontend-design` | Production-grade UI с уникальным дизайном | `frontend-design@claude-plugins-official` |
-| `agent-sdk-dev` | Разработка агентов на Claude Agent SDK | `agent-sdk-dev@claude-plugins-official` |
-| `claude-code-setup` | Анализ кодовой базы и рекомендации по автоматизации | `claude-code-setup@claude-plugins-official` |
-| `playwright` | Браузерное тестирование | `playwright@claude-plugins-official` |
-| `security-guidance` | Рекомендации по безопасности кода | `security-guidance@claude-plugins-official` |
-| `pyright-lsp` | LSP-анализ Python кода (типы, ошибки) | `pyright-lsp@claude-plugins-official` |
-| `typescript-lsp` | LSP-анализ TypeScript кода | `typescript-lsp@claude-plugins-official` |
-| `commit-commands` | Git коммиты, пуш, PR одной командой | `commit-commands@claude-plugins-official` |
-| `hookify` | Настройка хуков — правила поведения Claude | `hookify@claude-plugins-official` |
-| `claude-md-management` | Аудит и улучшение CLAUDE.md файлов | `claude-md-management@claude-plugins-official` |
-| `code-review` | Ревью pull request'ов | `code-review@claude-plugins-official` |
-| `pr-review-toolkit` | Комплексный анализ PR (несколько агентов) | `pr-review-toolkit@claude-plugins-official` |
+| `skill-creator` | Создание и тестирование скилов с eval-системой | `/skill create` или "создай новый скил для X" |
+| `frontend-design` | Production-grade UI с уникальным дизайном | "сделай компонент", "создай страницу", "построй интерфейс" |
+| `agent-sdk-dev` | Разработка агентов на Claude Agent SDK | "создай агента", "настрой Agent SDK", код с `anthropic` / `claude_agent_sdk` |
+| `claude-code-setup` | Анализ проекта и рекомендации по автоматизации | "что улучшить в этом проекте", "настрой автоматизацию" |
+| `playwright` | Браузерное тестирование | "напиши тест для страницы", "автоматизируй браузер" |
+| `security-guidance` | Рекомендации по безопасности кода | "проверь на уязвимости", "как безопаснее сделать X" |
+| `pyright-lsp` | LSP-анализ Python кода (типы, ошибки) | Работает автоматически при редактировании Python файлов |
+| `typescript-lsp` | LSP-анализ TypeScript кода | Работает автоматически при редактировании TS файлов |
+| `commit-commands` | Git коммиты, пуш, PR одной командой | `/commit`, `/commit-push-pr`, "закоммить изменения" |
+| `hookify` | Настройка хуков — правила поведения Claude | "создай хук", "запрети Claude делать X", `/hookify configure` |
+| `claude-md-management` | Аудит и улучшение CLAUDE.md файлов | "проверь CLAUDE.md", "улучши project memory", `/revise-claude-md` |
+| `code-review` | Ревью pull request'ов | `/code-review`, "сделай ревью PR #123" |
+| `pr-review-toolkit` | Комплексный анализ PR через несколько агентов | `/review-pr`, "полный анализ PR" — запускает 5+ специализированных агентов |
 
 ---
 
@@ -56,7 +56,7 @@
 
 Если решил оставить скил официальным (не переносить в my-claude-skills) — добавь строку в таблицу выше. Укажи:
 - Название
-- Откуда (маркетплейс)
-- Зачем
+- Зачем (одна строка — суть)
+- Как использовать (триггерные фразы или команды — чтобы через год вспомнить как запустить)
 
 Последнее обновление: 2026-03-17
