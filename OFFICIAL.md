@@ -33,6 +33,14 @@
 | `agent-sdk-dev` | Разработка агентов на Claude Agent SDK | `agent-sdk-dev@claude-plugins-official` |
 | `claude-code-setup` | Анализ кодовой базы и рекомендации по автоматизации | `claude-code-setup@claude-plugins-official` |
 | `playwright` | Браузерное тестирование | `playwright@claude-plugins-official` |
+| `security-guidance` | Рекомендации по безопасности кода | `security-guidance@claude-plugins-official` |
+| `pyright-lsp` | LSP-анализ Python кода (типы, ошибки) | `pyright-lsp@claude-plugins-official` |
+| `typescript-lsp` | LSP-анализ TypeScript кода | `typescript-lsp@claude-plugins-official` |
+| `commit-commands` | Git коммиты, пуш, PR одной командой | `commit-commands@claude-plugins-official` |
+| `hookify` | Настройка хуков — правила поведения Claude | `hookify@claude-plugins-official` |
+| `claude-md-management` | Аудит и улучшение CLAUDE.md файлов | `claude-md-management@claude-plugins-official` |
+| `code-review` | Ревью pull request'ов | `code-review@claude-plugins-official` |
+| `pr-review-toolkit` | Комплексный анализ PR (несколько агентов) | `pr-review-toolkit@claude-plugins-official` |
 
 ---
 
@@ -40,8 +48,6 @@
 
 | Скил | Откуда | Зачем |
 |---|---|---|
-| `claude-md-improver` | claude-plugins-official | Аудит CLAUDE.md файлов |
-| `hookify / writing-rules` | claude-plugins-official | Настройка правил хуков |
 | `plugin-dev` (7 скилов) | claude-plugins-official | Разработка плагинов, MCP, хуков |
 
 ---
@@ -53,4 +59,4 @@
 - Откуда (маркетплейс)
 - Зачем
 
-Последнее обновление: 2026-03-16
+Последнее обновление: 2026-03-17
